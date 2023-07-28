@@ -2,5 +2,8 @@
 using namespace std;
 
 int main(){
-    cout<<"hey"<<endl;
+  int n;
+  if(cin>>n){
+    cout<<"Aadarsh"<<endl;
+  }
 }
