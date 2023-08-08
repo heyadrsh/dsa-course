@@ -14,7 +14,7 @@ int main(){
     break;
   case 3: cout<<"three";
     break;
-  default: cout<<"Progress";
+  default: cout<<"Progress"; 
     break;
   }
 }
