@@ -12,7 +12,7 @@ bool findValue(int arr[], int size, int value){
 
 int main(){
   int arr[10]={1,4,52,53,53,43,1,5,9,8};
-  if(findValue(arr,10,1)){
+  if(findValue(arr,10,12)){
     cout<<"Found"<<endl;
   }
   else{
