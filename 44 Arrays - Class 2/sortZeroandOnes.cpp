@@ -14,10 +14,9 @@ vector<int> sortZeroOne(vector<int>arr){
       start++;
     }
     else{
-      swap(arr[i], arr[end]);
+      swap(arr[i],arr[end]);
       end--;
     }
-
   }
   return arr;
 }

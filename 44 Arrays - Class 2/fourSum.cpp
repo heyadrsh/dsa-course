@@ -21,7 +21,6 @@ vector<int> fourSum(vector<int>arr, int sum){
   return sumArr;
 }
 
-
 int main(){
     int n;
   cout << "Enter n: ";
