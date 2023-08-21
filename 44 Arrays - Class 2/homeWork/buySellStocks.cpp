@@ -42,7 +42,7 @@ int buySellStock(vector<int>arr){
 
 int main() {
   int n;
-  cout << "Enter n: ";
+  cout << "Enter prices: ";
   cin >> n;
 
   vector<int> arr(n);
@@ -51,5 +51,5 @@ int main() {
     cout << i + 1 << ": "; 
     cin >> arr[i];
   }
-  cout<<buySellStock(arr)<<endl;
+  cout<<buySellStock(arr)<<" Day"<<endl;
 }
