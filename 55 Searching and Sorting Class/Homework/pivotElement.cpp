@@ -1,38 +1,30 @@
-#include<iostream>
-#include<vector>
-#include<stdio.h>
-
+#include <iostream>
 using namespace std;
 
-int pivotEle(vector<int>arr){
-  int rS;
-  int lS;
-  int start=arr[0];
-  int end=arr.size()-1;
-  int mid=(start+(end-start)/2);
+int findPivot(int array[], int size) {
+    int start = 0;
+    int end = size - 1;
 
-  while(start<=end){
-    //for left sum
-    for (int i=0; i<=mid;i++){
-      lS+=arr[i];
+    while (start < end) {
+        int mid = start + (end - start) / 2;
+
+        if (array[mid] > array[end]) {
+            start = mid + 1;
+        } else {
+            end = mid;
+        }
     }
-    //for right sum
-    for(int i=mid; i<=end;i++){
-      rS+=arr[i];
-    }
-    if(lS==rS){
-      return mid;
-    }
-    else if(lS<rS){
-      start=mid+1;
-    }
-    else{
-      end=mid-1;
-    }
-  }
+
+    return start;
 }
 
-int main(){
-  vector<int>arr{1,2,2,2,2,3,4,5};
-  cout<<"The Pivot Element is: "<<arr[pivotEle(arr)]<<" at index of "<<pivotEle(arr)<<"."<<endl;
+int main() {
+    int rotatedArray[] = {6, 7, 8, 1, 2, 3, 4, 5};
+    int size = sizeof(rotatedArray) / sizeof(rotatedArray[0]);
+
+    int pivotIndex = findPivot(rotatedArray, size);
+
+    cout<<"The Pivot Element is: "<<rotatedArray[pivotIndex]<<" at index of "<<pivotIndex<<"."<<endl;
+
+    return 0;
 }
