@@ -36,7 +36,7 @@ int main() {
 	int r, c;
 	cout << "Enter the number of rows and columns: ";
 	cin >> r >> c;
-	int arr[r][c];
+	int arr[r][3];
 	cout << "Enter the elements of the array: ";
 	for (int i = 0; i < r; i++) {
 		for (int j = 0; j < c; j++) {
