@@ -46,4 +46,5 @@ int main(){
 
   total=lindex-index+1;
   cout<<"tndex:"<<total<<endl;
+
 }

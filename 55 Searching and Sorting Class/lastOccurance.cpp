@@ -27,7 +27,7 @@ int firstOccurance(vector<int>v, int target){
 
 int main(){
 	vector<int>v{1,2,3,3,4,4,5,6,7,8};
-	int target=3;
+	int target=4;
 	int index=firstOccurance(v,target);
 
 	cout<<"The very last occurance of "<<target<<" is at index "<<index<<"."<<endl;
