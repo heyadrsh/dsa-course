@@ -1,1 +1,3 @@
 [0201/014714.194:ERROR:registration_protocol_win.cc(136)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0202/095403.457:ERROR:registration_protocol_win.cc(136)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0202/100414.623:ERROR:crashpad_client_win.cc(144)] crash server failed to launch, self-terminating
