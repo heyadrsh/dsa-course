@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-	vector<int>v{1,2,3,4,5,7,8};
+	vector<int>v{22,23,24,25,26,28,29,30};
 
   int start=0;
 	cout<<"iStart: "<<start<<endl;
@@ -12,27 +12,16 @@ int main(){
 	cout<<"iend: "<<end<<endl;
   int mid=(start+end)/2;
 	cout<<"imid: "<<mid<<endl;
+	cout<<"---"<<endl;
 
-  while(start<end){
-    if(v[mid]==v[start]+mid){
+  while(start<=end){
+    if(v[mid]==v[0]+mid){
       start=mid+1;
-			cout<<"start: "<<start<<endl;
-			cout<<"mid: "<<mid<<endl;
-			cout<<"end: "<<end<<endl;
-			cout<<"---"<<endl;
     }
     else{
       end=mid-1;
-			cout<<"start: "<<start<<endl;
-			cout<<"mid: "<<mid<<endl;
-			cout<<"end: "<<end<<endl;
-			cout<<"---"<<endl;
     }
-    mid=start+(end-start)/2;
-			cout<<"start: "<<start<<endl;
-			cout<<"mid: "<<mid<<endl;
-			cout<<"end: "<<end<<endl;
-			cout<<"---"<<endl;
+    mid=(end+start)/2;
   }
-	cout<<"Missing Element: "<<mid+2<<endl;
+	cout<<"Missing Element: "<<v[mid+1]-1<<endl;
 }

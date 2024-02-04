@@ -4,20 +4,20 @@
 using namespace std;
 
 int missingEle(vector<int>v){
-  int start=v[0];
+  int start=0;
   int end=v.size()-1;
-  int mid=start+(end-start)/2;
+  int mid=(start+end)/2;
 
   while(start<=end){
-    if(v[mid]==v[start]+mid){
+    if(v[mid]==v[0]+mid){
       start=mid+1;
     }
     else{
       end=mid-1;
     }
-    mid=start+(end-start)/2;
+    mid=(end+start)/2;
   }
-  return v[end]+1;
+	return v[mid+1]-1;
 }
 
 int main(){
